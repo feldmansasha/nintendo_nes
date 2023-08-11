@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact page">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- add our CSS file -->
+    <link rel="stylesheet" href="./css/console.css">
+    <!-- add java script -->
+    <script src="./js/javascript.js.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <!-- header with 4 links-->
+    <header>
+        <div>
+            <a href="index.html"><img src="./img/logo.png" alt="Nintendo logo"></a>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./console.html">Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Map and contact details -->
+        <section class="address">
+            <!-- Nintendo Canada office on Google Maps -->
+            <div class="google">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8098772935086!2d-123.0428763131181!3d49.2610494023081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677e8a697180b%3A0xf8f7fd7c5c745b6d!2s2925%20Virtual%20Way%2C%20Vancouver%2C%20BC%20V5M%204X5!5e0!3m2!1sen!2sca!4v1691699619951!5m2!1sen!2sca"></iframe>
+            </div>
+
+            <!-- Contact form for potential customers -->
+            <div class="container">
+                <h2>Write us!</h2>
+                <form>
+              
+                  <label for="name">Your name:</label>
+                  <input id="name" placeholder="Name" type="text" required>
+
+                  <label for="company">Company:</label>
+                  <input id="company" placeholder="Company's name" type="text" required>
+
+                  <label for="telephone">Telephone:</label>
+                  <input id="telephone" type="tel" name="telephone" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567" required>
+              
+                  <label for="country">Country:</label>
+                  <select id="country" name="country">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="subject" placeholder="Your message" required></textarea>
+              
+                  <input class="send" type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+    </main>
+
+    <!-- footer with contact link and Nintendo social pages-->
+    <footer>
+        <nav>
+            <ul id="menu_footer">
+                <li><a href="#">Contact</a></li>
+                <li><a href="https://www.facebook.com/nintendoofcanada/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/nintendoamerica/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/nintendocanada" target="_blank">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+    </body>

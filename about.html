@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project About Eve&Alex">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- add java script -->
+    <script src="./js/javascript.js.js"></script>
+    <!-- add our CSS file -->
+    <link rel="stylesheet" href="./css/style_about.css">
+    <title>About</title>
+</head>
+
+<body class="grid">
+    <!-- header with 4 links-->
+   <header>
+    <div>
+        <a href="index.html"><img src="./img/logo.png" alt="Nintendo logo"></a>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./console.html">Product</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   </header>
+
+   <main>
+    <!-- Heading -->
+       <section class="masthead">
+           <div class="image-container">
+               <img src="./img/lifestyle1.jpeg" alt="lifestyle">
+           </div>
+               <h1>Creating smiles for generations!</h1>
+       </section>
+
+       <!-- 6 pictures of different characters  -->
+       <section>
+           <h3>Our Characters</h3>
+           <div class="character-img-content">
+               <div id="first"><img src="./img/character_Mario.png" alt="Mario"> </div>
+               <div id="second"><img src="./img/character_Peach.png" alt="Peach"> </div>
+               <div id="third"><img src="./img/character_Kirby.png" alt="Kirby"> </div>
+               <div id="fourth"><img src="./img/character_Link.png" alt="Link"> </div>
+               <div id="fifth"><img src="./img/character_pearl-marina.png" alt="Pearl&Marina"> </div>
+               <div id="sixth"><img src="./img/character_Isabelle.png" alt="Isabelle"> </div>
+           </div>
+
+           <div class="button-container">
+               <button class="nintendo-button" onClick="myFunction1()">Mario</button>
+               <button class="nintendo-button" onClick="myFunction2()">Peach</button>
+               <button class="nintendo-button" onClick="myFunction3()">Kirby</button>
+               <button class="nintendo-button" onClick="myFunction4()">Link</button>
+               <button class="nintendo-button" onClick="myFunction5()">Pearl&Marina</button>
+               <button class="nintendo-button" onClick="myFunction6()">Isabelle</button>
+           </div>
+
+       </section>
+
+       <!-- video from YouTube witn the latest console from Nintendo -->
+       <section>
+           <div class="video-container">
+               <h3>Corporate social responsibility</h3>
+               <iframe src="https://www.youtube.com/embed/8RngAaAhdmk" allowfullscreen></iframe>
+               <p>Our goal is to deliver smiles to our many Nintendo stakeholders, including our consumers, business partners, and employees throughout the Americas. That means advancing responsible business practices, supporting human rights, and ensuring we continue to reach ever-higher standards. </p>
+           </div>
+       </section>
+
+       <!-- Information about current CEO of the company -->
+       <section class="CEO-container">
+           <div class="CEO-content">
+               <div class="CEO-image">
+                   <figure>
+                       <img src="./img/Shuntaro_Furukawa.jpg" alt="Shuntaro_Furukawa">
+                       <figcaption>Shuntaro Furukawa</figcaption>
+                   </figure>
+               </div>
+               <div class="CEO-text">
+                   <h3 id="hoverChangeColor" onmouseover="changeToRedColor()" onmouseout="changetoBlackColor()">Global CEO</h3>
+                   <p>Shuntaro Furukawa (JP) (born January 10, 1972) is the current president of Nintendo. He is the 6th president overall, succeeding Tatsumi Kimishima. Furukawa stated in an interview that he bases his decisions on "the development leader's way of thinking" and that Nintendo's unique identity comes from its games, characters, and IP.</p>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <!-- Previous generations of Nintendo consoles -->
+   <aside>
+       <article>
+           <img src="./img/Nintendo-Color-TV-Game-Blockbreaker-FL.png" alt="Color-TV-Game-Blockbreaker">
+           <h4>1973–1978: Early video games and Color TV-Gam</h4>
+           <p>The Laser Clay Shooting System was released in 1973 and managed to surpass bowling in popularity. The growing demand for Nintendo's products led Yamauchi to further expand the offices, for which he acquired the surrounding land and assigned the production of cards to the original Nintendo building. Meanwhile, Yokoi, Uemura, and new employees such as Genyo Takeda, continued to develop innovative products for the company.</p>
+       </article>
+
+       <article>
+           <img src="./img/NES-Console-Set.jpg" alt="NES-Console-Set">
+           <h4>1979–1987: Game and Watch, arcade games, and Nintendo Entertainment System</h4>
+           <p>Two key events in Nintendo's history occurred in 1979: its American subsidiary was opened in New York City, and a new department focused on arcade game development was created. In 1980, the first handheld video game systems, the Game & Watch, was created by Yokoi from the technology used in portable calculators.It became one of Nintendo's most successful products.</p>
+       </article>
+
+       <article>
+           <img src="./img/SNES-Mod1-Console-Set.jpg" alt="SNES-Mod1-Console-Set">
+           <h4>1988–1992: Game Boy and Super Nintendo Entertainment System</h4>
+           <p>In 1988, Gunpei Yokoi and his team at Nintendo R&D1 conceived the Game Boy, the first handheld video game console made by Nintendo. Nintendo released the Game Boy in 1989. In North America, the Game Boy was bundled with the popular third-party game Tetris after a difficult negotiation process with Elektronorgtechnica.The Game Boy was a significant success.</p>
+       </article>
+
+       <article>
+           <img src="./img/Wii_U_Console.png" alt="Wii_U_Console">
+           <h4>2010–2016: Nintendo 3DS, Wii U, and mobile ventures</h4>
+           <p>Following an announcement in March 2010, Nintendo released the Nintendo 3DS in 2011. The console produces stereoscopic effects without 3D glasses. By 2018, more than 69 million units had been sold worldwide. In 2011, Nintendo celebrated the 25th anniversary of The Legend of Zelda with the orchestra concert tour The Legend of Zelda: Symphony of the Goddesses and the video game The Legend of Zelda: Skyward Sword.</p>
+       </article>
+
+       <article>
+           <img src="./img/Nintendo-Switch-Console-Docked-wJoyConRB.jpg" alt="Nintendo-Switch-Console">
+           <h4>2017–present: Nintendo Switch and expansion to other media</h4>
+           <p>The Wii U's successor in the eighth generation of video game consoles, the Nintendo Switch, was released in March 2017. To expand its library, Nintendo entered alliances with several third-party and independent developers by February 2019, more than 1,800 Switch games had been released. Worldwide sales of the Switch exceeded 55 million units by March 2020.</p>
+       </article>
+   </aside>
+
+   <!-- footer with contact link and Nintendo social pages-->
+   <footer>
+       <nav>
+           <ul id="menu_footer">
+               <li><a href="./contact.html">Contact</a></li>
+               <li><a href="https://www.facebook.com/nintendoofcanada/" target="_blank">Facebook</a></li>
+               <li><a href="https://www.instagram.com/nintendoamerica/" target="_blank">Instagram</a></li>
+               <li><a href="https://twitter.com/nintendocanada" target="_blank">Twitter</a></li>
+           </ul>
+       </nav>
+   </footer>
+
+</body>
+</html>

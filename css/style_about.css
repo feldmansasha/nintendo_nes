@@ -1,0 +1,326 @@
+/******************/
+/* Global Styling */
+/******************/
+body{
+    margin: 0;
+}
+
+/******************/
+/* text properties */
+/******************/
+h1,h3,h5,h6{
+    font-family: 'Plus Jakarta San', sans-serif;
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+h4{
+    font-family: 'Plus Jakarta San', sans-serif;
+    font-size: 1.2em;
+}
+
+p{
+    font-size: 1.1em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+a,li{
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "h h h h"
+          "m m m a"
+          "f f f f";
+    margin: 0;
+}
+
+
+/******************/
+/* Header */
+/******************/
+header{
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    height: 14vh;
+    background-color: #f4f4f4;
+    width: 100%;
+    z-index: 9999;
+}
+
+header > div{
+    height: 100px;
+    width: auto;
+}
+
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+header > nav > ul > li{
+    padding: 2vh;
+
+}
+
+header > nav > ul > li > a{
+    color: #424949;
+    font-size: 3vh;
+}
+
+/******************/
+/* Masthead with brand slogan */
+/******************/
+.grid .masthead{
+    width: 99%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #E60012;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.image-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.masthead > h1 {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 2vw;
+    font-size: 4vw;
+    white-space: nowrap;
+    display: inline;
+}
+
+/******************/
+/* main */
+/******************/
+.grid > main{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+/******************/
+/* Our Characters */
+/******************/
+.grid > main > section + section{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid > main > section + section > h3{
+    font-size: 3vw;
+    color: black;
+    margin: 0;
+}
+
+.button-container{
+    padding: 3%;
+    display: inline-block;
+
+}
+
+.nintendo-button {
+    background-color: #e60012;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nintendo-button:hover {
+    background-color: #c7000a;
+}
+
+
+
+
+/******************/
+/* Corporate social responsibility + video  */
+/******************/
+
+.grid > main > section:nth-child(3){
+    display: grid;
+    text-align: center;
+}
+
+
+.grid > main > section:nth-child(3) .video-container{
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid > main > section:nth-child(3) .video-container > h3 {
+    font-size: 6vh;
+    color: black;
+    margin: 10px;
+    padding: 2%;
+}
+
+.grid > main > section:nth-child(3) .video-container > p{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/******************/
+/*  CEO information */
+/******************/
+
+.grid > main > section:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.CEO-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CEO-content {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.CEO-image {
+    margin-right: 20px;
+}
+
+figcaption {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    color: #424949;
+    text-align: center;
+    padding: 2%;
+}
+
+.CEO-text {
+    flex: 1;
+}
+
+.CEO-text > h3{
+    color: #E60012;
+    font-size: 4vw;
+}
+
+
+
+/******************/
+/*aside: Previous generations of Nintendo consoles*/
+/******************/
+.grid > aside{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #f8f8f8;
+    padding: 6vh 3vw 3vh 3vw;
+}
+
+
+.grid > aside > article > h4 {
+    font-size: 1.5vw;
+}
+
+.grid > aside > article > img{
+    width: 100%;
+    height: auto;
+}
+
+/******************/
+/*footer*/
+/******************/
+
+footer{
+    grid-area: f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    background-color: #f4f4f4;
+}
+
+footer > nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer > nav > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer > nav > ul > li{
+    padding: 0 2vw;
+}
+
+footer > nav > ul > li > a{
+    color: #424949;
+    font-size:3vh;
+}
+.video-container > iframe{
+    width: 45vw;
+    height: 25.3vw;
+}

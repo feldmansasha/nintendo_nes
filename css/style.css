@@ -1,0 +1,241 @@
+/******************/
+/* Global Styling */
+/******************/
+body{
+    margin: 0;
+}
+
+
+h1,h3,h4,h5,h6{
+    font-family: 'Plus Jakarta San', sans-serif;
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+a,li{
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/******************/
+/* Header */
+/******************/
+header{
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    height: 14vh;
+    background-color: #f4f4f4;
+    width: 100%;
+    z-index: 9999;
+}
+
+header > div{
+    height: 100px;
+    width: auto;
+}
+
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+header > nav > ul > li{
+    padding: 2vh;
+
+}
+
+header > nav > ul > li > a{
+    color: #424949;
+    font-size: 3vh;
+}
+
+/******************/
+/* masthead with order button */
+/******************/
+.masthead > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0;
+    background-image:url("../img/NES11.jpg");
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E60012;
+    color: white;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3vw;
+    font-family: 'Plus Jakarta San', sans-serif;
+    position: absolute;
+    top:15%;
+}
+
+.link-button:hover {
+    background-color: #B2BABB;
+}
+
+.contact-part {
+    padding: 5vh 0;
+    background-color: #F7F9F9;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo-left {
+    display: flex;
+    max-width: 330px;
+    margin-right: 65px;
+    margin-left: 45px;
+}
+
+.contact-info-right{
+    display: flex;
+    color: #424949;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact-info-right p{
+    margin-bottom: 40px;
+    color: #424949;
+}
+
+.link-button2 {
+    display: inline-block;
+    background-color: #E60012;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 106px;
+    height: 22px;
+    font-family: 'Plus Jakarta San', sans-serif;
+    position: absolute;
+    margin-top: 70px
+}
+
+.link-button2:hover {
+    background-color: #B2BABB;
+}
+
+/******************/
+/* game-template: Games available for the NES */
+/******************/
+.game-template {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 1vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "m m m"
+          "m m m";
+    margin: 0;
+    background-color: black;
+    padding: 2vh 0;
+}
+
+.image-container {
+    text-align: center;
+    margin: 1vh;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+}
+
+
+.image-container h2,
+.image-container h3 {
+    margin: 1vh 0;
+    color: #f4f4f4;
+    font-size: 1.5vw;
+    text-align: center
+}
+
+
+.hover-image {
+    transition: transform 0.3s;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+/******************/
+/*footer*/
+/******************/
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    background-color: #f4f4f4;
+}
+
+footer > nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer > nav > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer > nav > ul > li{
+    padding: 0 2vw;
+}
+
+footer > nav > ul > li > a{
+    color: #424949;
+    font-size:3vh;
+}

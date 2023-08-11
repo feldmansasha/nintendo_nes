@@ -1,0 +1,226 @@
+body{
+    margin: 0px;
+}
+
+/* set the text properties */
+h1,h3,h4,h5,h6{
+    font-family: 'Plus Jakarta San', sans-serif;
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+a,li{
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/******************/
+/* Header */
+/******************/
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 14vh;
+    width: 100%;
+    z-index: 9999;
+    margin-bottom: 5vh;
+}
+
+header > div{
+    height: 100px;
+    width: auto;
+}
+
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+header > nav > ul > li{
+    padding: 2vh;
+
+}
+
+header > nav > ul > li > a{
+    color: #424949;
+    font-size:3vh;
+}
+
+/******************/
+/* Main */
+/******************/
+
+/* Heading h1 */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.heading > h1{
+    margin-right: 2vw;
+}
+/* 4 rows with key features of the console */
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+  }
+.picture1 > img{
+    width: 35vw;
+    height:auto;
+    margin-left: 5vw;
+}
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+  }
+.picture2 > img{
+    width: 35vw;
+    height:auto;
+    margin-right: 5vw;
+}
+.row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+  }
+.picture3 > img{
+    width: 35vw;
+    height:auto;
+    margin-left: 5vw;
+}
+.row4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+  }
+.picture4 > img{
+    width: 35vw;
+    height:auto;
+    margin-right: 5vw;
+}
+/* hover effect */
+.hover-image {
+    transition: transform 0.3s;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+/******************/
+/* Footer */
+/******************/
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    background-color: #f4f4f4;
+}
+
+footer > nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer > nav > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer > nav > ul > li{
+    padding: 0px 2vw;
+}
+
+footer > nav > ul > li > a{
+    color: #424949;
+    font-size: 3vh;
+}
+/* Contact page. Displaying company's address on Google Maps */
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 3vh;
+}
+.google > iframe {
+    width:35vw;
+    height:55vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+/* input container form */
+.container{
+    margin-right: 10vw;
+}
+.containter > h2{
+    text-align: center;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 2vh;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    resize: vertical;
+  }
+  
+  .send {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
